@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - GitHub Repo Pusher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #238636;
+            --primary-dark: #19672c;
+            --text: #2d333b;
+            --text-light: #57606a;
+            --bg: #ffffff;
+            --card-bg: #f6f8fa;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.8s ease;
+        }
+        
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .last-updated {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        
+        .policy-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .policy-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        h2 i {
+            font-size: 1.2rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        strong {
+            color: var(--primary-dark);
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+        
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            animation: fadeIn 1s ease;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Delay animations for each section */
+        .policy-section:nth-child(1) { animation-delay: 0.2s; }
+        .policy-section:nth-child(2) { animation-delay: 0.4s; }
+        .policy-section:nth-child(3) { animation-delay: 0.6s; }
+        .policy-section:nth-child(4) { animation-delay: 0.8s; }
+        .policy-section:nth-child(5) { animation-delay: 1.0s; }
+        .policy-section:nth-child(6) { animation-delay: 1.2s; }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .policy-section {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated"><strong>Last Updated:</strong> June 10, 2024</p>
+        </header>
+        
+        <main>
+            <section class="policy-section">
+                <h2><i class="fas fa-ban"></i> Information We Do Not Collect</h2>
+                <p>The GitHub Repo Pusher App <strong>does not</strong> collect, store, or transmit:</p>
+                <ul>
+                    <li>Your GitHub username or password</li>
+                    <li>Your personal files or repository data</li>
+                    <li>Any tracking, analytics, or personal data</li>
+                </ul>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-cogs"></i> How the App Works</h2>
+                <ul>
+                    <li>The App requires a <strong>GitHub Personal Access Token (PAT)</strong> to push files to your repositories</li>
+                    <li>Your token is stored <strong>locally on your device</strong> and is never transmitted to external servers</li>
+                    <li>The App only interacts with <strong>GitHub's API</strong> for actions you explicitly request</li>
+                    <li>All operations occur directly between your device and GitHub's servers</li>
+                </ul>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-ad"></i> No Ads or Tracking</h2>
+                <ul>
+                    <li>The App <strong>contains no advertisements</strong> of any kind</li>
+                    <li><strong>No third-party trackers</strong> or analytics services are used</li>
+                    <li>We do not monetize your data in any way</li>
+                </ul>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-lock"></i> Security</h2>
+                <ul>
+                    <li>Your GitHub token is stored securely using Android's encrypted storage mechanisms</li>
+                    <li>The App <strong>cannot access</strong> your GitHub account beyond the specific permissions granted by your token</li>
+                    <li>You can <strong>revoke the token anytime</strong> through your GitHub account settings</li>
+                    <li>We recommend using tokens with the <strong>minimum required permissions</strong></li>
+                </ul>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-history"></i> Changes to This Policy</h2>
+                <p>We may update this Privacy Policy occasionally to reflect changes in our practices. When we do, we'll revise the "Last Updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy or the App's data practices, please contact us:</p>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:cebp060823@gmail.com">cebp060823@gmail.com</a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2024 GitHub Repo Pusher App. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
